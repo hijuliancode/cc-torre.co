@@ -1,0 +1,13 @@
+// _06-components.image.scss
+
+.image {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+// _01-settings.variables.scss
+
+$NON_HEADER_HEIGHT: 64px;
+
+// $spacing-base-size is defined on _01-settings.spacing.scss
+
+$NON_BORDER_RADIUS_NONE: 0;
+$NON_BORDER_RADIUS_QUARCK: 1px;
+$NON_BORDER_RADIUS_NANO: 2px;
+$NON_BORDER_RADIUS_XM: 4px;
+$NON_BORDER_RADIUS_SM: 8px;
+$NON_BORDER_RADIUS_MD: 16px;
+$NON_BORDER_RADIUS_LG: 24px;
+$NON_BORDER_RADIUS_CIRCULAR: 50%;
+
+$NON_BORDER_ELM_01: 1px solid $gray-color-05;
+$NON_BORDER_ELM_02: 1px solid $gray-color-06;
+$NON_BORDER_ELM_03: 2px solid $brand-primary-color;
+
+$NON_TRANSITION_ALL_01: all 0.35s ease-out;

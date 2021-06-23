@@ -1,0 +1,35 @@
+// _06-components.buttons.scss
+
+.btn {
+  cursor: pointer;
+
+  &.btn--in-form {
+    background: transparent;
+    border: 0;
+    color: $gray-color-03;
+    font-size: $NON_FONT_SIZE_XS;
+    height: 100%;
+    padding: $NON_SPACE_INSET_NONE $NON_SPACE_INSET_MD;
+    transition: all 0.35s ease-in-out;
+
+    &.active {
+      color: $brand-color-01;
+    }
+  }
+
+  &.btn-default,
+  &.btn-primary {
+    border-radius: $NON_BORDER_RADIUS_XM;
+    border: 0;
+    padding: $NON_SPACE_INSET_SQUISH_SM;
+  }
+
+  &.btn-primary {
+    background-color: $brand-color-02;
+    color: $white-color-full;
+  }
+
+  &.btn--full {
+    width: 100%;
+  }
+}

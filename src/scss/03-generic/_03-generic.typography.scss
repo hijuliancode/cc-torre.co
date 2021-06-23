@@ -1,0 +1,21 @@
+// _03-generic.typography.scss
+
+body {
+  color: $text-color-02;
+  font-family: $NON_FONT_FAMILY_01;
+}
+
+a {
+  color: $brand-secondary-color;
+  text-decoration: none;
+}
+
+/** Remove Margins of Titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

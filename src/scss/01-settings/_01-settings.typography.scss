@@ -1,0 +1,39 @@
+// _01-settings.typography.scss
+
+// Import Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Import Roboto
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+// Font Family
+$NON_FONT_FAMILY_01: "Poppins";
+$NON_FONT_FAMILY_02: "Roboto";
+
+// Font Weights
+$NON_FONT_WEIGHT_THIN: 100;
+$NON_FONT_WEIGHT_EXTRALIGHT: 200;
+$NON_FONT_WEIGHT_LIGHT: 300;
+$NON_FONT_WEIGHT_REGULAR: 400;
+$NON_FONT_WEIGHT_MEDIUM: 500;
+$NON_FONT_WEIGHT_SEMIBOLD: 600;
+$NON_FONT_WEIGHT_BOLD: 700;
+$NON_FONT_WEIGHT_EXTRABOLD: 800;
+$NON_FONT_WEIGHT_BLACK: 900;
+
+// Font Sizes
+$NON_FONT_SIZE_XXXS: 12px;
+$NON_FONT_SIZE_XXS: 14px;
+$NON_FONT_SIZE_XS: 16px;
+$NON_FONT_SIZE_SM: 20px;
+$NON_FONT_SIZE_MD: 24px;
+$NON_FONT_SIZE_LG: 32px;
+$NON_FONT_SIZE_XL: 40px;
+$NON_FONT_SIZE_XXL: 48px;
+$NON_FONT_SIZE_XXXL: 64px;
+$NON_FONT_SIZE_DISPLAY: 80px;
+$NON_FONT_SIZE_GIANT: 96px;
+
+// Line height
+$NON_LINE_HEIGHT_TIGHT: 100%;
+$NON_LINE_HEIGHT_MEDIUM: 120%;
+$NON_LINE_HEIGHT_DISTANT: 150%;

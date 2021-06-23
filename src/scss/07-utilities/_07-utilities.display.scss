@@ -1,0 +1,42 @@
+// _07-utilities.display.scss
+
+body {
+  // To add "specificity" to spacing classes
+
+  // Visibility
+  .d-none {
+    display: none;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .d-block {
+    display: block;
+  }
+
+  .only-mobile {
+    @include media-bkp-up("lg") {
+      display: none;
+    }
+  }
+
+  .only-desktop {
+    @include media-bkp-max("lg") {
+      display: none;
+    }
+  }
+
+  // flex classes
+  .align-items-center {
+    align-items: center;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .direction-column {
+    flex-direction: column;
+  }
+}
