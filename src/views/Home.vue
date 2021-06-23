@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <HeaderNav />
+  <div class="page-home">
+    Home
   </div>
 </template>
 
@@ -10,8 +10,5 @@ import HeaderNav from '@/components/HeaderNav.vue'; // @ is an alias to /src
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    HeaderNav,
-  },
 });
 </script>
