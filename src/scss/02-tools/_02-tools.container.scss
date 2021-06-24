@@ -11,19 +11,19 @@
 .container-fluid-only-desktop {
   // XXS
   @include media-bkp-up("xxs") {
-    width: $NON_CONTAINER_XXS;
+    width: $T_CONTAINER_XXS;
   }
   // XS
   @include media-bkp-up("xs") {
-    width: $NON_CONTAINER_XS;
+    width: $T_CONTAINER_XS;
   }
   // SM
   @include media-bkp-up("sm") {
-    width: $NON_CONTAINER_SM;
+    width: $T_CONTAINER_SM;
   }
   // MD
   @include media-bkp-up("md") {
-    width: $NON_CONTAINER_MD;
+    width: $T_CONTAINER_MD;
   }
   // LG
   @include media-bkp-up("lg") {
@@ -31,11 +31,11 @@
   }
   // XL
   @include media-bkp-up("xl") {
-    width: $NON_CONTAINER_XL;
+    width: $T_CONTAINER_XL;
   }
   // XXL
   @include media-bkp-up("xxl") {
-    width: $NON_CONTAINER_XXL;
+    width: $T_CONTAINER_XXL;
   }
 }
 

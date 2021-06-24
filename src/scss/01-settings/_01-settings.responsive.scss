@@ -1,28 +1,28 @@
 // _01-settings.responsive.scss
 // XXS 0px
-$NON_BKP_XXS: 0;
-$NON_CONTAINER_XXS: 100%;
+$T_BKP_XXS: 0;
+$T_CONTAINER_XXS: 100%;
 
 // XS 312px
-$NON_BKP_XS: 312px;
-$NON_CONTAINER_XS: calc(100% - 48px); // 312px
+$T_BKP_XS: 312px;
+$T_CONTAINER_XS: calc(100% - 48px); // 312px
 
 // SM 600px
-$NON_BKP_SM: 600px;
-$NON_CONTAINER_SM: calc(100% - 48px); // 568px
+$T_BKP_SM: 600px;
+$T_CONTAINER_SM: calc(100% - 48px); // 568px
 
 // MD 768px
-$NON_BKP_MD: 768px;
-$NON_CONTAINER_MD: calc(100% - 48px); // 688px
+$T_BKP_MD: 768px;
+$T_CONTAINER_MD: calc(100% - 48px); // 688px
 
 // LG 1024px
-$NON_BKP_LG: 1024px;
-$NON_CONTAINER_LG: 944px;
+$T_BKP_LG: 1024px;
+$T_CONTAINER_LG: 944px;
 
 // XL 1280px
-$NON_BKP_XL: 1280px;
-$NON_CONTAINER_XL: 1200px;
+$T_BKP_XL: 1280px;
+$T_CONTAINER_XL: 1200px;
 
 // XXL 1600px
-$NON_BKP_XXL: 1600px;
-$NON_CONTAINER_XXL: 1320px;
+$T_BKP_XXL: 1600px;
+$T_CONTAINER_XXL: 1320px;

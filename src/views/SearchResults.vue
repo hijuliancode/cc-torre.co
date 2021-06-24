@@ -28,7 +28,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { mapActions, mapState } from 'vuex';
-// import HeaderNav from '@/components/HeaderNav.vue'; // @ is an alias to /src
 
 export default defineComponent({
   name: 'SearchResults',

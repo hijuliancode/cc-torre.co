@@ -7,9 +7,9 @@
     background: transparent;
     border: 0;
     color: $gray-color-03;
-    font-size: $NON_FONT_SIZE_XS;
+    font-size: $T_FONT_SIZE_XS;
     height: 100%;
-    padding: $NON_SPACE_INSET_NONE $NON_SPACE_INSET_MD;
+    padding: $T_SPACE_INSET_NONE $T_SPACE_INSET_MD;
     transition: all 0.35s ease-in-out;
 
     &.active {
@@ -19,9 +19,9 @@
 
   &.btn-default,
   &.btn-primary {
-    border-radius: $NON_BORDER_RADIUS_XM;
+    border-radius: $T_BORDER_RADIUS_XM;
     border: 0;
-    padding: $NON_SPACE_INSET_SQUISH_SM;
+    padding: $T_SPACE_INSET_SQUISH_SM;
   }
 
   &.btn-primary {

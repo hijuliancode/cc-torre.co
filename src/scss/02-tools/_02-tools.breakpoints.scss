@@ -3,22 +3,22 @@
 // 02_tools.breakpoints.scss
 
 $breakpoints-up: (
-  "xxs": ( min-width: $NON_BKP_XXS ),  // 0
-  "xs":  ( min-width: $NON_BKP_XS  ),        // 312px
-  "sm":  ( min-width: $NON_BKP_SM  ),        // 600px
-  "md":  ( min-width: $NON_BKP_MD  ),        // 768px
-  "lg":  ( min-width: $NON_BKP_LG  ),        // 1024px
-  "xl":  ( min-width: $NON_BKP_XL  ),        // 1280px
-  "xxl": ( min-width: $NON_BKP_XXL ),       // 1600px
+  "xxs": ( min-width: $T_BKP_XXS ),  // 0
+  "xs":  ( min-width: $T_BKP_XS  ),        // 312px
+  "sm":  ( min-width: $T_BKP_SM  ),        // 600px
+  "md":  ( min-width: $T_BKP_MD  ),        // 768px
+  "lg":  ( min-width: $T_BKP_LG  ),        // 1024px
+  "xl":  ( min-width: $T_BKP_XL  ),        // 1280px
+  "xxl": ( min-width: $T_BKP_XXL ),       // 1600px
 ) !default;
 
 $breakpoints-max: (
-  "xs":  ( max-width: $NON_BKP_XS  ), // 312px
-  "sm":  ( max-width: $NON_BKP_SM  ), // 600px
-  "md":  ( max-width: $NON_BKP_MD  ), // 768px
-  "lg":  ( max-width: $NON_BKP_LG  ), // 1024px
-  "xl":  ( max-width: $NON_BKP_XL  ), // 1280px
-  "xxl": ( max-width: $NON_BKP_XXL ), // 1600px
+  "xs":  ( max-width: $T_BKP_XS  ), // 312px
+  "sm":  ( max-width: $T_BKP_SM  ), // 600px
+  "md":  ( max-width: $T_BKP_MD  ), // 768px
+  "lg":  ( max-width: $T_BKP_LG  ), // 1024px
+  "xl":  ( max-width: $T_BKP_XL  ), // 1280px
+  "xxl": ( max-width: $T_BKP_XXL ), // 1600px
 ) !default;
 
 @mixin media-bkp-up($breakpoint-up) {

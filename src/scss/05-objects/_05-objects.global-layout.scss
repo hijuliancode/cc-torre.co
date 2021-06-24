@@ -14,3 +14,12 @@ main {
   display: block;
   flex-grow: 1;
 }
+
+
+// APP ROOT
+#app {
+  display: flex;
+  min-height: 100vh;
+  padding-top: $T_HEADER_HEIGHT;
+  width: 100%;
+}

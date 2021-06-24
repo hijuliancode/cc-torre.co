@@ -1,6 +1,6 @@
 <template>
   <div class="page-home">
-    Home
+    <router-link to="/search">Go to Search</router-link>
   </div>
 </template>
 

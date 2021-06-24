@@ -1,7 +1,9 @@
 // _05-objects.home.scss
 
-body {
-  // To add "specificity"
-  .home {
+body { // To add "specificity"
+  .page-home {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
