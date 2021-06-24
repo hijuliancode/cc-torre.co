@@ -1,0 +1,63 @@
+// _05-objects.home.scss
+
+body { // To add "specificity"
+  .page-search {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+    .wrapper-search {
+      color: $gray-color-01;
+      display: grid;
+      gap: $T_SPACE_INLINE_LG;
+      grid-template-areas: "area__a area__b";
+      grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+      height: calc(100% - 16px);
+      width: calc(100% - 16px);
+
+      @include media-bkp-up('lg'){
+        height: calc(100% - 48px);
+        width: calc(100% - 48px);
+      }
+
+      .area-a,
+      .area-b  {
+        align-items: center;
+        background-color: $white-color-full;
+        border-radius: $T_BORDER_RADIUS_XM;
+        display: flex;
+        justify-content: center;
+        padding: $T_SPACE_INSET_LG;
+        text-align: center;
+        flex-direction: column;
+
+        .area__image {
+          height: 140px;
+          margin-bottom: 24px;
+          margin-top: -24px;
+          width: 340px;
+
+          img {
+            max-height: 100%;
+            max-width: 100%;
+          }
+        }
+
+        .search-title {
+          font-family: $T_FONT_FAMILY_03;
+          font-size: 48px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .area-a {
+        grid-area: area__a;
+      }
+
+      .area-b {
+        grid-area: area__b;
+      }
+    }
+  }
+}

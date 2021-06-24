@@ -3,6 +3,8 @@ import Home from '../views/Home.vue';
 import SearchResults from '../views/SearchResults.vue';
 import UserDetails from '../views/UserDetails.vue';
 import JobDetails from '../views/JobDetails.vue';
+import ResultsJobs from '../views/ResultsJobs.vue';
+import ResultsUsers from '../views/ResultsUsers.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +26,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/jobs/:id',
     name: 'Job Description',
     component: JobDetails,
+  },
+  {
+    path: '/jobs/results',
+    name: 'Job Results',
+    component: ResultsJobs,
+  },
+  {
+    path: '/users/results',
+    name: 'Users Results',
+    component: ResultsUsers,
   },
   {
     path: '/about',

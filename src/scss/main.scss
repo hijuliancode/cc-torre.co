@@ -26,11 +26,14 @@
 @import "./05-objects/05-objects.global-layout";
 @import "./05-objects/05-objects.pages";
 @import "./05-objects/05-objects.home";
+@import "./05-objects/05-objects.search";
+@import "./05-objects/05-objects.results";
 
 // COMPONENTS
 @import "./06-components/06-components.button";
 @import "./06-components/06-components.image";
 @import "./06-components/06-components.header";
+@import "./06-components/06-components.form-search";
 
 // UTILITIES
 @import "./07-utilities/07-utilities.spacing";
