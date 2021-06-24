@@ -39,7 +39,7 @@ export default defineComponent({
     };
   },
   methods: {
-    ...mapActions(['searchJobs', 'searchUsers']),
+    ...mapActions(['searchJobs', 'searchUsers', 'cleanJobs', 'cleanUsers']),
   },
   async mounted() {
     console.log('mounted');

@@ -29,41 +29,56 @@ export default createStore({
   },
   actions: {
     async searchJobs(context, query) {
-      // context.commit('loading', true);
+      context.commit('loading', true);
+      this.dispatch('cleanUsers');
       try {
-        const { data } = await axios.post('https://search.torre.co/opportunities/_search/?offset=0&size=4&aggregate=true', {
-          body: {
-            'skill/role': {
-              text: query,
-              experience: 'potential-to-develop',
+        const { data } = await axios.post(
+          'https://search.torre.co/opportunities/_search/?offset=0&size=4&aggregate=true',
+          {
+            body: {
+              'skill/role': {
+                text: query,
+                experience: 'potential-to-develop',
+              },
             },
           },
-        });
-        context.commit('setJobs', data);
+        );
+        const { results } = data;
+        context.commit('setJobs', results);
         context.commit('loading', false);
-        console.log('searchJobs data=>', data);
+        console.log('searchJobs results=>', results);
       } catch (err) {
         console.warn('searchJobs err => ', err);
       }
     },
     async searchUsers(context, query) {
-      // context.commit('loading', true);
+      context.commit('loading', true);
+      this.dispatch('cleanJobs');
       try {
-        const { data } = await axios.post('https://search.torre.co/people/_search/?offset=0&size=4&aggregate=true', {
-          body: {
-            name: {
-              term: query,
+        const { data } = await axios.post(
+          'https://search.torre.co/people/_search/?offset=0&size=4&aggregate=true',
+          {
+            body: {
+              name: {
+                term: query,
+              },
             },
           },
-        });
-        context.commit('setUsers', data);
+        );
+        const { results } = data;
+        context.commit('setUsers', results);
         context.commit('loading', false);
-        console.log('searchUsers data=>', data);
+        console.log('searchUsers results=>', results);
       } catch (err) {
         console.warn('searchUsesr err => ', err);
       }
     },
+    cleanJobs(context) {
+      context.commit('setJobs', []);
+    },
+    cleanUsers(context) {
+      context.commit('setUsers', []);
+    },
   },
-  modules: {
-  },
+  modules: {},
 });
