@@ -2,22 +2,24 @@
   <div class="page-search">
     <div class="wrapper-search">
       <div class="area-a">
-        <h2 class="search-title">Job Search</h2>
-        <div class="form-search">
-          <form @submit.prevent="goToSearchJobs()">
-            <input type="text" placeholder="Buscar trabajo..." v-model="search.queryJobs"/>
-            <button type="submit">Buscar Trabajo</button>
-          </form>
+        <div class="area__image">
+          <img src="" alt="" />
         </div>
+        <h2 class="search-title">Job Search</h2>
+        <form class="form-search" @submit.prevent="goToSearchJobs()">
+          <input type="text" placeholder="Buscar trabajo..." v-model="search.queryJobs"/>
+          <button type="submit">Buscar</button>
+        </form>
       </div>
       <div class="area-b">
-        <h2 class="search-title">User Search</h2>
-        <div class="form-search">
-          <form @submit.prevent="goToSearchUsers()">
-            <input type="text" placeholder="Buscar usuarios..." v-model="search.queryUsers"/>
-            <button type="submit">Buscar Usuarios</button>
-          </form>
+        <div class="area__image">
+          <img src="" alt="" />
         </div>
+        <h2 class="search-title">User Search</h2>
+        <form class="form-search" @submit.prevent="goToSearchUsers()">
+          <input type="text" placeholder="Buscar usuarios..." v-model="search.queryUsers"/>
+          <button type="submit">Buscar</button>
+        </form>
       </div>
     </div>
   </div>

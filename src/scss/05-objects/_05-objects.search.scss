@@ -8,7 +8,7 @@ body { // To add "specificity"
 
 
     .wrapper-search {
-      color: $gray-color-07;
+      color: $gray-color-01;
       display: grid;
       gap: $T_SPACE_INLINE_LG;
       grid-template-areas: "area__a area__b";
@@ -23,9 +23,22 @@ body { // To add "specificity"
 
       .area-a,
       .area-b  {
-        background-color: $gray-color-01;
+        align-items: center;
+        background-color: $white-color-full;
         border-radius: $T_BORDER_RADIUS_XM;
+        display: flex;
+        justify-content: center;
         padding: $T_SPACE_INSET_LG;
+        text-align: center;
+        flex-direction: column;
+
+        .area__image {
+          background-color: red;
+          height: 140px;
+          margin-bottom: 24px;
+          width: 340px;
+          margin-top: -24px;
+        }
 
         .search-title {
           font-family: $T_FONT_FAMILY_03;

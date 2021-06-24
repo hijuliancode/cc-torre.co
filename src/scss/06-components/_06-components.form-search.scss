@@ -1,0 +1,32 @@
+// _06-components.form-search.scss
+
+.form-search {
+  border-radius: 12px;
+  display: flex;
+  height: 40px;
+  outline: none;
+  position: relative;
+  width: 80%;
+
+  input[type="text"] {
+    border-radius: 12px;
+    border: 1px solid $brand-color-03;;
+    outline: none;
+    padding: 0 112px 0 24px;
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    background-color: $brand-color-03;
+    border-radius: 0 12px 12px 0;
+    border: 0;
+    color: $white-color-full;
+    height: 100%;
+    outline: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: absolute;
+    right: 0;
+    width: auto;
+  }
+}
