@@ -3,7 +3,7 @@
     <div class="wrapper-search">
       <div class="area-a">
         <div class="area__image">
-          <img src="" alt="" />
+          <img alt="Job search image" src="../assets/images/design/misc/job-search.png" />
         </div>
         <h2 class="search-title">Job Search</h2>
         <form class="form-search" @submit.prevent="goToSearchJobs()">
@@ -13,7 +13,7 @@
       </div>
       <div class="area-b">
         <div class="area__image">
-          <img src="" alt="" />
+          <img alt="User search image" src="../assets/images/design/misc/user-search.png" />
         </div>
         <h2 class="search-title">User Search</h2>
         <form class="form-search" @submit.prevent="goToSearchUsers()">

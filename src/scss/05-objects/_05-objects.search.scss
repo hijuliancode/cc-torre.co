@@ -33,11 +33,15 @@ body { // To add "specificity"
         flex-direction: column;
 
         .area__image {
-          background-color: red;
           height: 140px;
           margin-bottom: 24px;
-          width: 340px;
           margin-top: -24px;
+          width: 340px;
+
+          img {
+            max-height: 100%;
+            max-width: 100%;
+          }
         }
 
         .search-title {

@@ -1,0 +1,19 @@
+// _05-objects.results.scss
+
+body { // To add "specificity"
+  .page-results {
+    .wrapper-results {
+      background-color: $white-color-full;
+      border-radius: 4px;
+      padding: 24px;
+
+      .form-search {
+        width: 100%;
+      }
+    }
+  }
+
+  .page-results.jobs {}
+
+  .page-results.users {}
+}

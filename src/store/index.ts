@@ -43,6 +43,7 @@ export default createStore({
           },
         );
         const { results } = data;
+        console.log('results jobs', results);
         context.commit('setJobs', results);
         context.commit('loading', false);
       } catch (err) {
