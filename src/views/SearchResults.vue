@@ -12,11 +12,16 @@
     </form>
     {{search}}
 
+    <button @click="searchJob('Jdm8pXqw')" type="button">Buscar un trabajo</button>
+    <button @click="searchUser('andresurreao')" type="button">Buscar un usuario</button>
+
     <div class="loading" v-if="loading">loading...</div>
 
     <hr/>
     {{jobs_results}}
     {{users_results}}
+    {{job_selected}}
+    {{user_selected}}
   </div>
 </template>
 
@@ -28,7 +33,7 @@ import { mapActions, mapState } from 'vuex';
 export default defineComponent({
   name: 'SearchResults',
   computed: {
-    ...mapState(['loading', 'jobs_results', 'users_results']),
+    ...mapState(['loading', 'jobs_results', 'users_results', 'job_selected', 'user_selected']),
   },
   data() {
     return {
@@ -39,7 +44,7 @@ export default defineComponent({
     };
   },
   methods: {
-    ...mapActions(['searchJobs', 'searchUsers', 'cleanJobs', 'cleanUsers']),
+    ...mapActions(['searchJobs', 'searchUsers', 'searchJob', 'searchUser']),
   },
   async mounted() {
     console.log('mounted');

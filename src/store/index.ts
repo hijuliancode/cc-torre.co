@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { useContext } from 'vue';
 import { createStore } from 'vuex';
 
 export default createStore({
@@ -46,9 +45,18 @@ export default createStore({
         const { results } = data;
         context.commit('setJobs', results);
         context.commit('loading', false);
-        console.log('searchJobs results=>', results);
       } catch (err) {
         console.warn('searchJobs err => ', err);
+      }
+    },
+    async searchJob(context, id) {
+      context.commit('loading', true);
+      try {
+        const { data } = await axios.get(`https://torre.co/api/opportunities/${id}`);
+        context.commit('setJobSelected', data);
+        context.commit('loading', false);
+      } catch (err) {
+        console.warn('searchJob error', err);
       }
     },
     async searchUsers(context, query) {
@@ -68,9 +76,19 @@ export default createStore({
         const { results } = data;
         context.commit('setUsers', results);
         context.commit('loading', false);
-        console.log('searchUsers results=>', results);
       } catch (err) {
         console.warn('searchUsesr err => ', err);
+      }
+    },
+    async searchUser(context, id) {
+      context.commit('loading', true);
+      try {
+        const { data } = await axios.get(`https://guarded-peak-77488.herokuapp.com/http://bio.torre.co/api/bios/${id}`);
+        console.log('searchUser data', data);
+        context.commit('setUserSelected', data);
+        context.commit('loading', false);
+      } catch (err) {
+        console.warn('searchUser error', err);
       }
     },
     cleanJobs(context) {
