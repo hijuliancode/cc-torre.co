@@ -3,8 +3,8 @@
     <nav id="nav" class="header__nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/users/23">Users</router-link> |
-      <router-link to="/jobs/21321">Jobs</router-link> |
+      <router-link to="/users/andresurreao">Users</router-link> |
+      <router-link to="/jobs/Jdm8pXqw">Jobs</router-link> |
       <router-link to="/search">Search</router-link>
     </nav>
   </header>

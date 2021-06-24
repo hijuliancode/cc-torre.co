@@ -49,14 +49,14 @@ export default createStore({
         console.warn('searchJobs err => ', err);
       }
     },
-    async searchJob(context, id) {
+    async getJob(context, id) {
       context.commit('loading', true);
       try {
         const { data } = await axios.get(`https://torre.co/api/opportunities/${id}`);
         context.commit('setJobSelected', data);
         context.commit('loading', false);
       } catch (err) {
-        console.warn('searchJob error', err);
+        console.warn('getJob error', err);
       }
     },
     async searchUsers(context, query) {
@@ -80,16 +80,19 @@ export default createStore({
         console.warn('searchUsesr err => ', err);
       }
     },
-    async searchUser(context, id) {
+    async getUser(context, id) {
       context.commit('loading', true);
       try {
         const { data } = await axios.get(`https://guarded-peak-77488.herokuapp.com/http://bio.torre.co/api/bios/${id}`);
-        console.log('searchUser data', data);
+        console.log('getUser data', data);
         context.commit('setUserSelected', data);
         context.commit('loading', false);
       } catch (err) {
-        console.warn('searchUser error', err);
+        console.warn('getUser error', err);
       }
+    },
+    async setLoading(context, _loading:boolean) {
+      context.commit('loading', _loading);
     },
     cleanJobs(context) {
       context.commit('setJobs', []);

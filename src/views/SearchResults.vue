@@ -12,8 +12,8 @@
     </form>
     {{search}}
 
-    <button @click="searchJob('Jdm8pXqw')" type="button">Buscar un trabajo</button>
-    <button @click="searchUser('andresurreao')" type="button">Buscar un usuario</button>
+    <button @click="getJob('Jdm8pXqw')" type="button">Buscar un trabajo</button>
+    <button @click="getUser('andresurreao')" type="button">Buscar un usuario</button>
 
     <div class="loading" v-if="loading">loading...</div>
 
@@ -44,7 +44,7 @@ export default defineComponent({
     };
   },
   methods: {
-    ...mapActions(['searchJobs', 'searchUsers', 'searchJob', 'searchUser']),
+    ...mapActions(['searchJobs', 'searchUsers', 'getJob', 'getUser']),
   },
   async mounted() {
     console.log('mounted');

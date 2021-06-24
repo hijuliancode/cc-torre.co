@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/Home.vue';
 import SearchResults from '../views/SearchResults.vue';
 import UserDetails from '../views/UserDetails.vue';
-import JobDescription from '../views/JobDescription.vue';
+import JobDetails from '../views/JobDetails.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -23,7 +23,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/jobs/:id',
     name: 'Job Description',
-    component: JobDescription,
+    component: JobDetails,
   },
   {
     path: '/about',

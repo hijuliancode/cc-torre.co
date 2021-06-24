@@ -1,10 +1,9 @@
 <template>
-  <div class="page-user-details">
-    UserDetails
-
+  <div class="page-job-details">
+    JobDetails
     <div class="loading" v-if="loading">loading...</div>
 
-    <div class="user__desc" v-if="!loading">{{user_selected}}</div>
+    <div class="job__desc" v-if="!loading">{{job_selected}}</div>
   </div>
 </template>
 
@@ -13,7 +12,7 @@ import { defineComponent } from 'vue';
 import { mapActions, mapState } from 'vuex';
 
 export default defineComponent({
-  name: 'UserDetails',
+  name: 'JobDetails',
   computed: {
     ...mapState(['loading', 'jobs_results', 'users_results', 'job_selected', 'user_selected']),
   },
@@ -23,8 +22,12 @@ export default defineComponent({
   async mounted() {
     this.setLoading(true);
     const idUser = await this.$route.params.id;
-    this.getUser(idUser);
+    this.getJob(idUser);
     console.log('mounted idUser', idUser);
   },
+  // watch: {
+  //   $route(to, from) {
+  //   },
+  // },
 });
 </script>
